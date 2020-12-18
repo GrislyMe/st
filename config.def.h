@@ -59,8 +59,8 @@ int allowwindowops = 0;
  * near minlatency, but it waits longer for slow updates to avoid partial draw.
  * low minlatency will tear/flicker more, as it can "detect" idle too early.
  */
-static double minlatency = 8;
-static double maxlatency = 33;
+static double minlatency = 4;
+static double maxlatency = 10;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
@@ -103,7 +103,7 @@ unsigned int tabspaces = 4;
 static const char *colorname[] = {
     [0] = "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
     [1] = "#cc241d", /* red     */
-    [2] = "#98971a", /* green   */
+    [2] = "#68af1d", /* green   */
     [3] = "#d79921", /* yellow  */
     [4] = "#458588", /* blue    */
     [5] = "#b16286", /* magenta */
@@ -113,7 +113,7 @@ static const char *colorname[] = {
     /* 8 bright colors */
     [8]  = "#928374", /* black   */
     [9]  = "#fb4934", /* red     */
-    [10] = "#b8bb26", /* green   */
+    [10] = "#b5f06d", /* green   */
     [11] = "#fabd2f", /* yellow  */
     [12] = "#83a598", /* blue    */
     [13] = "#d3869b", /* magenta */
